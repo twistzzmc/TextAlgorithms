@@ -1,0 +1,10 @@
+Testing string of size 0.996kB
+Number of bits before compression: 7968
+Number of bits after compression:  3434
+Compression Ratio:                 43.1%
+
+Testing string of size 254.133kB
+Number of bits before compression: 2033064
+Number of bits after compression:  1043593
+Compression Ratio:                 51.33%
+

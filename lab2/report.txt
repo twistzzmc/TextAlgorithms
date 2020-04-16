@@ -1,0 +1,54 @@
+I'm testing these three options (In order: #1 Trie, #2 Suffix Tree using McCreight (with links) #3 Suffix Tree without links)
+in six tests with increasing number of characters (exact amount given next to examples).
+First five examples follow "abaabbaaabbac" pattern and the last one is in file 1997_714.txt.
+The last example due to usage of a lot of unknown characters will NOT be tested inTrie structure and tree without links.
+Time is given in seconds.
+
+
+#1 example --- Length: 13
+
+Trie      --- 0.0
+McCreight --- 0.0
+No links  --- 0.002001047134399414
+--- --- --- --- --- --- --- --- ---
+
+#2 example --- Length: 104
+
+Trie      --- 0.005000591278076172
+McCreight --- 0.0
+No links  --- 0.001997232437133789
+--- --- --- --- --- --- --- --- ---
+
+#3 example --- Length: 416
+
+Trie      --- 0.05099916458129883
+McCreight --- 0.003997802734375
+No links  --- 0.019131898880004883
+--- --- --- --- --- --- --- --- ---
+
+#4 example --- Length: 1664
+
+Trie      --- 0.7671084403991699
+McCreight --- 0.012014389038085938
+No links  --- 0.2870039939880371
+--- --- --- --- --- --- --- --- ---
+
+#5 example --- Length: 6656
+
+Trie      --- 11.608552694320679
+McCreight --- 0.05092787742614746
+No links  --- 4.236880302429199
+--- --- --- --- --- --- --- --- ---
+
+#6 example --- Length: 13312
+
+Trie      --- 47.568045139312744
+McCreight --- 0.1059572696685791
+No links  --- 17.938273906707764
+--- --- --- --- --- --- --- --- ---
+
+#7 example --- Length: 246472
+
+McCreight --- 4.6280317306518555
+--- --- --- --- --- --- --- --- ---
+

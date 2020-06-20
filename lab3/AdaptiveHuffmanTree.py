@@ -23,7 +23,7 @@ class AdaptiveHuffmanTree:
         self.e = self._calculate_e_and_n()[0]
         self.r = int(self._calculate_e_and_n()[1])
         self.first_char_ord = first_char_ord - 1
-        root, compressed_text = self.adaptive_huffman(text)
+        root, compressed_text = self._adaptive_huffman(text)
         self.root = root
         self.compressed_text = compressed_text
 
@@ -59,7 +59,7 @@ class AdaptiveHuffmanTree:
             e += 1
             power_of_e *= 2
 
-    def adaptive_huffman(self, text):
+    def _adaptive_huffman(self, text):
         init_weight = (2 * self.number_of_characters) - 1
         nodes = {"nyt": AdaptiveNode("nyt", init_weight, 0)}
         root = nodes["nyt"]
@@ -90,7 +90,7 @@ class AdaptiveHuffmanTree:
             code = self._calculate_node_code(node)
 
             k = ord(letter) - self.first_char_ord
-            if k < 2 * self.r:
+            if k <= 2 * self.r:
                 number_of_bits = self.e + 1
                 number = k - 1
             else:
@@ -152,13 +152,12 @@ class AdaptiveHuffmanTree:
                     letter = chr(int(bit_number.to01(), 2) + 1 + self.first_char_ord)
                     current_bit += self.e + 1
                 else:
-                    letter = chr(int(bit_number.to01(), 2) + 11 + self.first_char_ord)
+                    letter = chr(int(bit_number.to01(), 2) + 1 + self.r + self.first_char_ord)
                     current_bit += self.e
             else:
                 letter = decoded_node.char
 
             text += letter
-
             if letter not in nodes:
                 updated_node = nodes["nyt"]
                 node = AdaptiveNode(letter, updated_node.weight - 1, 1, parent=updated_node)

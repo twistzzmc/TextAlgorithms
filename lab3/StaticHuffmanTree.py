@@ -1,4 +1,5 @@
 import heapq as hq
+from bitarray import bitarray
 
 
 class StaticNode:
@@ -16,13 +17,9 @@ class StaticNode:
 
 
 class StaticHuffmanTree:
-    def __init__(self, text=None, letter_counts=None, root=None):
-        if text is not None:
-            self.root = self._huffman_heap(self._get_frequency(text))
-        elif letter_counts is not None:
-            self.root = self._huffman_heap(letter_counts)
-        else:
-            self.root = root
+    def __init__(self, text=None):
+        self.root = self._huffman_heap(self._get_frequency(text))
+        self.compressed_text = self._encode(text)
 
     def __str__(self, node=None, level=0, direction=None):
         huffman_tree = ""
@@ -57,7 +54,7 @@ class StaticHuffmanTree:
 
         return letter_count
 
-    def get_code(self):
+    def _get_code(self):
         letter_code = dict()
 
         def utility_get_code(node, direction, code):
@@ -75,14 +72,29 @@ class StaticHuffmanTree:
         utility_get_code(self.root, "", "")
         return letter_code
 
-    def pseudo_encode(self, text):
-        letter_code = self.get_code()
-        encoding = ""
+    def _encode(self, text):
+        letter_code = self._get_code()
+        encoding = bitarray()
 
         for letter in text:
-            encoding += letter_code[letter]
+            encoding += bitarray(letter_code[letter])
 
         return encoding
+
+    def decode(self):
+        text = ""
+        node = self.root
+        for bit in self.compressed_text.to01():
+            if node.char is not None:
+                text += node.char
+                node = self.root
+
+            if bit == '0':
+                node = node.left
+            else:
+                node = node.right
+
+        return text
 
     @staticmethod
     def _huffman(letter_counts):

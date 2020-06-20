@@ -1,0 +1,168 @@
+==============================zad 3==============================
+Measuring build time for DBF and Suffix Tree:
+
+
+Measuring time for DBF --- romeo
+It took --- 75828300 ns
+It took --- 0.07582831382751465 s
+
+Measuring time for Suffix Tree --- romeo
+It took --- 87770500 ns
+It took --- 0.08777046203613281 s
+
+Measuring time for DBF --- statute
+It took --- 623840200 ns
+It took --- 0.62384033203125 s
+
+Measuring time for Suffix Tree --- statute
+It took --- 1896750300 ns
+It took --- 1.8967504501342773 s
+
+Measuring time for DBF --- zad6
+It took --- 3989100 ns
+It took --- 0.003988981246948242 s
+
+Measuring time for Suffix Tree --- zad6
+It took --- 4988700 ns
+It took --- 0.004988670349121094 s
+
+==============================zad 4==============================
+Measuring size of DBF and original text file
+
+
+Measuring size for --- Romeo
+Size of DBF in bytes --- 101536
+Size of romeo-i-julia-700.txt in bytes --- 14208
+
+Measuring size for --- statute
+Size of DBF in bytes --- 1971920
+Size of romeo-i-julia-700.txt in bytes --- 254133
+
+Measuring size for --- zad6
+Size of DBF in bytes --- 7584
+Size of romeo-i-julia-700.txt in bytes --- 947
+
+==============================zad 5==============================
+Comparing matching patterns indexes times for KMP and DBF:
+
+
+Measuring pattern matches finding time for KMP Algorithm --- Romeo
+It took --- 2027200 ns
+It took --- 0.002027273178100586 s
+
+Measuring pattern matches finding time for DBF --- Romeo
+It took --- 67786800 ns
+It took --- 0.06778669357299805 s
+
+Matches indexes for KMP and DBF respectively --- Romeo for pattern "Romeo":
+[21, 7233, 8847, 11078]
+[21, 7233, 8847, 11078]
+
+Measuring pattern matches finding time for KMP Algorithm --- Statute
+It took --- 41888200 ns
+It took --- 0.04188823699951172 s
+
+Measuring pattern matches finding time for DBF --- Statute
+It took --- 1646495700 ns
+It took --- 1.6464958190917969 s
+
+Matches indexes for KMP and DBF respectively --- Statute for pattern "dnia":
+[268, 1797, 2829, 10683, 13145, 13609, 14012, 14634, 14675, 15191, 15580, 15625, 23142, 28859, 29105, 29374, 30227, 32641, 33136, 35013, 35664, 36282, 36743, 36953, 37096, 37866, 42405, 45258, 47284, 48633, 50565, 50811, 51121, 51327, 51615, 51732, 52959, 55194, 55205, 56795, 57668, 58658, 59086, 59169, 59180, 59434, 59607, 60822, 61348, 61994, 62017, 62559, 66666, 66679, 66806, 67617, 68276, 68804, 70336, 71450, 71974, 72771, 75429, 75504, 75515, 75755, 76219, 77485, 77496, 77545, 78143, 80316, 85647, 86137, 86879, 88741, 89096, 89930, 115426, 134085, 148051, 210244, 225956, 228007, 233574, 243143, 244832]
+[268, 1797, 2829, 10683, 13145, 13609, 14012, 14634, 14675, 15191, 15580, 15625, 23142, 28859, 29105, 29374, 30227, 32641, 33136, 35013, 35664, 36282, 36743, 36953, 37096, 37866, 42405, 45258, 47284, 48633, 50565, 50811, 51121, 51327, 51615, 51732, 52959, 55194, 55205, 56795, 57668, 58658, 59086, 59169, 59180, 59434, 59607, 60822, 61348, 61994, 62017, 62559, 66666, 66679, 66806, 67617, 68276, 68804, 70336, 71450, 71974, 72771, 75429, 75504, 75515, 75755, 76219, 77485, 77496, 77545, 78143, 80316, 85647, 86137, 86879, 88741, 89096, 89930, 115426, 134085, 148051, 210244, 225956, 228007, 233574, 243143, 244832]
+
+Measuring pattern matches finding time for KMP Algorithm --- zad6
+It took --- 0 ns
+It took --- 0.0 s
+
+Measuring pattern matches finding time for DBF --- zad6
+It took --- 4953900 ns
+It took --- 0.004953861236572266 s
+
+Matches indexes for KMP and DBF respectively --- zad6 for pattern "wzorca":
+[92, 162, 465, 539]
+[92, 162, 465, 539]
+
+==============================zad 3==============================
+Measuring build time for DBF and Suffix Tree:
+
+
+Measuring time for DBF --- romeo
+It took --- 78790200 ns
+It took --- 0.07879018783569336 s
+
+Measuring time for Suffix Tree --- romeo
+It took --- 81782200 ns
+It took --- 0.08178234100341797 s
+
+Measuring time for DBF --- statute
+It took --- 603960600 ns
+It took --- 0.6039605140686035 s
+
+Measuring time for Suffix Tree --- statute
+It took --- 1805502500 ns
+It took --- 1.8055026531219482 s
+
+Measuring time for DBF --- zad6
+It took --- 4023400 ns
+It took --- 0.004023551940917969 s
+
+Measuring time for Suffix Tree --- zad6
+It took --- 4024400 ns
+It took --- 0.004024505615234375 s
+
+==============================zad 4==============================
+Measuring size of DBF and original text file
+
+
+Measuring size for --- Romeo
+Size of DBF in bytes --- 101536
+Size of romeo-i-julia-700.txt in bytes --- 14208
+
+Measuring size for --- statute
+Size of DBF in bytes --- 1971920
+Size of romeo-i-julia-700.txt in bytes --- 254133
+
+Measuring size for --- zad6
+Size of DBF in bytes --- 7584
+Size of romeo-i-julia-700.txt in bytes --- 947
+
+==============================zad 5==============================
+Comparing matching patterns indexes times for KMP and DBF:
+
+
+Measuring pattern matches finding time for KMP Algorithm --- Romeo
+It took --- 2029500 ns
+It took --- 0.0020296573638916016 s
+
+Measuring pattern matches finding time for DBF --- Romeo
+It took --- 57821900 ns
+It took --- 0.05782198905944824 s
+
+Matches indexes for KMP and DBF respectively --- Romeo for pattern "Romeo":
+[21, 7233, 8847, 11078]
+[21, 7233, 8847, 11078]
+
+Measuring pattern matches finding time for KMP Algorithm --- Statute
+It took --- 38143900 ns
+It took --- 0.03814363479614258 s
+
+Measuring pattern matches finding time for DBF --- Statute
+It took --- 1563972400 ns
+It took --- 1.5639724731445312 s
+
+Matches indexes for KMP and DBF respectively --- Statute for pattern "dnia":
+[268, 1797, 2829, 10683, 13145, 13609, 14012, 14634, 14675, 15191, 15580, 15625, 23142, 28859, 29105, 29374, 30227, 32641, 33136, 35013, 35664, 36282, 36743, 36953, 37096, 37866, 42405, 45258, 47284, 48633, 50565, 50811, 51121, 51327, 51615, 51732, 52959, 55194, 55205, 56795, 57668, 58658, 59086, 59169, 59180, 59434, 59607, 60822, 61348, 61994, 62017, 62559, 66666, 66679, 66806, 67617, 68276, 68804, 70336, 71450, 71974, 72771, 75429, 75504, 75515, 75755, 76219, 77485, 77496, 77545, 78143, 80316, 85647, 86137, 86879, 88741, 89096, 89930, 115426, 134085, 148051, 210244, 225956, 228007, 233574, 243143, 244832]
+[268, 1797, 2829, 10683, 13145, 13609, 14012, 14634, 14675, 15191, 15580, 15625, 23142, 28859, 29105, 29374, 30227, 32641, 33136, 35013, 35664, 36282, 36743, 36953, 37096, 37866, 42405, 45258, 47284, 48633, 50565, 50811, 51121, 51327, 51615, 51732, 52959, 55194, 55205, 56795, 57668, 58658, 59086, 59169, 59180, 59434, 59607, 60822, 61348, 61994, 62017, 62559, 66666, 66679, 66806, 67617, 68276, 68804, 70336, 71450, 71974, 72771, 75429, 75504, 75515, 75755, 76219, 77485, 77496, 77545, 78143, 80316, 85647, 86137, 86879, 88741, 89096, 89930, 115426, 134085, 148051, 210244, 225956, 228007, 233574, 243143, 244832]
+
+Measuring pattern matches finding time for KMP Algorithm --- zad6
+It took --- 961300 ns
+It took --- 0.0009615421295166016 s
+
+Measuring pattern matches finding time for DBF --- zad6
+It took --- 2991500 ns
+It took --- 0.002991199493408203 s
+
+Matches indexes for KMP and DBF respectively --- zad6 for pattern "wzorca":
+[92, 162, 465, 539]
+[92, 162, 465, 539]
+

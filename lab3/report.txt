@@ -1,10 +1,40 @@
-Testing string of size 0.996kB
-Number of bits before compression: 7968
-Number of bits after compression:  3434
-Compression Ratio:                 43.1%
+File size before compressing                                 --- 1.01kB
+File size after compressing using STATIC Huffman Algorithm   --- 0.281kB
+File size after compressing using ADAPTIVE Huffman Algorithm --- 0.514kB
+Compression FACTOR of STATIC Huffman Algorithm   --- 27.82%
+Compression FACTOR of ADAPTIVE Huffman Algorithm --- 50.89%
+STATIC Huffman Algorithm Compressing time     --- 0.001996
+ADAPTIVE Huffman Algorithm Compressing time   --- 0.007996
+STATIC Huffman Algorithm Decompressing time   --- 0.001
+ADAPTIVE Huffman Algorithm Decompressing time --- 0.017996
 
-Testing string of size 254.133kB
-Number of bits before compression: 2033064
-Number of bits after compression:  1043593
-Compression Ratio:                 51.33%
+File size before compressing                                 --- 10.847kB
+File size after compressing using STATIC Huffman Algorithm   --- 2.078kB
+File size after compressing using ADAPTIVE Huffman Algorithm --- 3.472kB
+Compression FACTOR of STATIC Huffman Algorithm   --- 19.16%
+Compression FACTOR of ADAPTIVE Huffman Algorithm --- 32.01%
+STATIC Huffman Algorithm Compressing time     --- 0.011994
+ADAPTIVE Huffman Algorithm Compressing time   --- 0.074958
+STATIC Huffman Algorithm Decompressing time   --- 0.006997
+ADAPTIVE Huffman Algorithm Decompressing time --- 0.0
+
+File size before compressing                                 --- 101.578kB
+File size after compressing using STATIC Huffman Algorithm   --- 19.506kB
+File size after compressing using ADAPTIVE Huffman Algorithm --- 21.155kB
+Compression FACTOR of STATIC Huffman Algorithm   --- 19.2%
+Compression FACTOR of ADAPTIVE Huffman Algorithm --- 20.83%
+STATIC Huffman Algorithm Compressing time     --- 0.073956
+ADAPTIVE Huffman Algorithm Compressing time   --- 0.331741
+STATIC Huffman Algorithm Decompressing time   --- 0.040978
+ADAPTIVE Huffman Algorithm Decompressing time --- 0.933375
+
+File size before compressing                                 --- 1068.785kB
+File size after compressing using STATIC Huffman Algorithm   --- 205.999kB
+File size after compressing using ADAPTIVE Huffman Algorithm --- 223.397kB
+Compression FACTOR of STATIC Huffman Algorithm   --- 19.27%
+Compression FACTOR of ADAPTIVE Huffman Algorithm --- 20.9%
+STATIC Huffman Algorithm Compressing time     --- 0.610668
+ADAPTIVE Huffman Algorithm Compressing time   --- 3.247755
+STATIC Huffman Algorithm Decompressing time   --- 0.434749
+ADAPTIVE Huffman Algorithm Decompressing time --- 9.46999
 

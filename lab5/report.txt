@@ -1,0 +1,349 @@
+----------------------------------exercise 2----------------------------------------------------------
+In file haystack.txt finding all situations were the same letter is on the same place on two consequent lines.
+I assumed I am to look only for letters, hence spaces and newlines are ignored.
+
+The convention is: first there two lines that were being compared, then in brackets [] there are
+in order - index of the character and what the character is.
+
+
+"One of the simplest and n a t u r a l types of information representation is by means"
+"of written texts. This type of d a t a is characterized by t h e fact t h a t it can"
+Patterns --- [7 "t"], [63 "e"], [82 "a"], [83 "n"], 
+
+"of written texts. This type of d a t a is characterized by t h e fact t h a t it can"
+"be written down as a long sequence of characters. Such linear a sequence"
+Patterns --- [3 "w"], [4 "r"], [5 "i"], [6 "t"], [7 "t"], [8 "e"], [9 "n"], 
+
+"be written down as a long sequence of characters. Such linear a sequence"
+"is called a text. T h e texts are central in "word processing" systems, which"
+Patterns --- 
+
+"is called a text. T h e texts are central in "word processing" systems, which"
+"provide facilities for t h e manipulation of texts. Such systems usually process"
+Patterns --- [30 "a"], [37 "t"], [54 "c"], [57 "s"], [63 "s"], 
+
+"provide facilities for t h e manipulation of texts. Such systems usually process"
+"objects t h a t are quite large. For example, this book probably contains more"
+Patterns --- [14 "t"], [23 "t"], [49 "s"], [75 "o"], [77 "e"], 
+
+"objects t h a t are quite large. For example, this book probably contains more"
+"t h a n a million characters. Text algorithms occur in many areas of science and"
+Patterns --- [60 "a"], [66 "o"], 
+
+"t h a n a million characters. Text algorithms occur in many areas of science and"
+"information processing. Many text editors and programming languages have"
+Patterns --- [38 "o"], [39 "r"], [50 "r"], [63 "a"], 
+
+"information processing. Many text editors and programming languages have"
+"facilities for processing texts. In biology, text algorithms arise in the study"
+Patterns --- [13 "r"], [29 "t"], [38 "o"], [65 "e"], 
+
+"facilities for processing texts. In biology, text algorithms arise in the study"
+"of molecular sequences. T h e complexity of text algorithms is also one of t h e"
+Patterns --- [21 "s"], [37 "i"], [75 "t"], 
+
+"of molecular sequences. T h e complexity of text algorithms is also one of t h e"
+"central and most studied problems in theoretical computer science. It could"
+Patterns --- [58 "s"], [60 "i"], 
+
+"central and most studied problems in theoretical computer science. It could"
+"be said t h a t it is the domain in which practice and theory are very close to"
+Patterns --- [1 "e"], [27 "o"], [45 "c"], [64 "e"], 
+
+"be said t h a t it is the domain in which practice and theory are very close to"
+"each other."
+Patterns --- 
+
+"each other."
+"T h e basic textual problem in stringology is called pattern matching. It is"
+Patterns --- 
+
+"T h e basic textual problem in stringology is called pattern matching. It is"
+"used to access information and, no doubt, at this moment m a n y computers"
+Patterns --- [10 "c"], [55 "t"], 
+
+"used to access information and, no doubt, at this moment m a n y computers"
+"are solving this problem as a frequently used operation in some application"
+Patterns --- [2 "e"], [54 "n"], 
+
+"are solving this problem as a frequently used operation in some application"
+"system. P a t t e r n matching is comparable in this sense to sorting, or to basic"
+Patterns --- [12 "t"], [18 "r"], [43 "e"], [60 "o"], 
+
+"system. P a t t e r n matching is comparable in this sense to sorting, or to basic"
+"arithmetic operations."
+Patterns --- [3 "t"], [5 "m"], 
+
+"arithmetic operations."
+"Consider the problem of a reader of the French dictionary " G r a n d Larousse,""
+Patterns --- [6 "e"], [14 "r"], 
+
+"Consider the problem of a reader of the French dictionary " G r a n d Larousse,""
+"who wants all entries related to the n a m e "Marie-Curie-Sklodowska." This is"
+Patterns --- [27 "e"], 
+
+"who wants all entries related to the n a m e "Marie-Curie-Sklodowska." This is"
+"a n example of a p a t t e r n matching problem, or string matching. In this case,"
+Patterns --- [33 "t"], [37 "n"], [54 "r"], [55 "i"], 
+
+"a n example of a p a t t e r n matching problem, or string matching. In this case,"
+"the n a m e "Marie-Curie-Sklodowska" is the p a t t e r n . Generally we m a y want to"
+Patterns --- [6 "a"], [10 "e"], [54 "r"], [56 "n"], 
+
+"the n a m e "Marie-Curie-Sklodowska" is the p a t t e r n . Generally we m a y want to"
+"find a string called a pattern of length m inside a text of length n, where n is"
+Patterns --- [61 "e"], [62 "n"], [70 "w"], 
+
+"find a string called a pattern of length m inside a text of length n, where n is"
+"greater t h a n m. T h e p a t t e r n can be described in a more complex way to denote"
+Patterns --- [8 "t"], [53 "e"], 
+
+"greater t h a n m. T h e p a t t e r n can be described in a more complex way to denote"
+"a set of strings and not just a single word. In many cases n is very large. In"
+Patterns --- [4 "t"], 
+
+"a set of strings and not just a single word. In many cases n is very large. In"
+"genetics the p a t t e r n can correspond to a gene t h a t can be very long; in image"
+Patterns --- [3 "e"], [4 "t"], [65 "e"], 
+
+"genetics the p a t t e r n can correspond to a gene t h a t can be very long; in image"
+""
+Patterns --- 
+
+""
+"T h e search of words or p a t t e r n s in static texts is quite a different question"
+Patterns --- 
+
+"T h e search of words or p a t t e r n s in static texts is quite a different question"
+"t h a n the previous pattern-matching mechanism. Dictionaries, for example,"
+Patterns --- [2 "h"], [17 "o"], [31 "t"], 
+
+"t h a n the previous pattern-matching mechanism. Dictionaries, for example,"
+"are organized in order to speed u p the access to entries. Another example"
+Patterns --- [17 "o"], [23 "t"], [45 "s"], [52 "t"], [65 "r"], [67 "e"], [68 "x"], [69 "a"], [70 "m"], [71 "p"], [72 "l"], [73 "e"], 
+
+"are organized in order to speed u p the access to entries. Another example"
+"of the same question is given by indexes. Technical books often contain a n"
+Patterns --- [38 "e"], [43 "e"], [56 "s"], 
+
+"of the same question is given by indexes. Technical books often contain a n"
+"index of chosen terms t h a t gives pointers to p a r t s of the text related to words"
+Patterns --- [16 "t"], [56 "s"], [58 "o"], [59 "f"], 
+
+"index of chosen terms t h a t gives pointers to p a r t s of the text related to words"
+"in the index. T h e algorithms involved in the creation of an index form a"
+Patterns --- [0 "i"], [1 "n"], [31 "i"], [50 "a"], [70 "r"], [73 "a"], 
+
+"in the index. T h e algorithms involved in the creation of an index form a"
+"specific group. T h e use of dictionaries or lexicons is often related t o n a t u r a l"
+Patterns --- [34 "o"], 
+
+"specific group. T h e use of dictionaries or lexicons is often related t o n a t u r a l"
+"language processing. Lexicons of programming languages are small, and their"
+Patterns --- [10 "r"], [11 "o"], [26 "o"], [37 "r"], [45 "l"], [66 "a"], 
+
+"language processing. Lexicons of programming languages are small, and their"
+"representation is not a difficult problem during the development of a compiler."
+Patterns --- [40 "m"], [60 "m"], 
+
+"representation is not a difficult problem during the development of a compiler."
+"To the contrary, English contains approximately 100,000 words, a n d even twice"
+Patterns --- [10 "t"], [18 "n"], 
+
+"To the contrary, English contains approximately 100,000 words, a n d even twice"
+"t h a t if inflected forms are considered. In French, inflected forms produce more"
+Patterns --- 
+
+"t h a t if inflected forms are considered. In French, inflected forms produce more"
+"t h a n 700,000 words. T h e representation of lexicons of this size makes the"
+Patterns --- [0 "t"], [2 "h"], [4 "a"], [19 "d"], [34 "s"], [48 "e"], 
+
+"t h a n 700,000 words. T h e representation of lexicons of this size makes the"
+"problem a bit more challenging."
+Patterns --- 
+
+"problem a bit more challenging."
+"A simple use of dictionaries is illustrated by spelling checkers. T h e UNIX"
+Patterns --- 
+
+"A simple use of dictionaries is illustrated by spelling checkers. T h e UNIX"
+"command, spell, reports the words in its input t h a t are not stored in the lexi-"
+Patterns --- [11 "e"], [26 "e"], [63 "s"], 
+
+"command, spell, reports the words in its input t h a t are not stored in the lexi-"
+"con. This rough approach does not yield a pertinent checker, b u t , practically,"
+Patterns --- [0 "c"], [1 "o"], [18 "p"], [45 "t"], [57 "e"], [73 "t"], [77 "l"], 
+
+"con. This rough approach does not yield a pertinent checker, b u t , practically,"
+"it helps to find typing errors. T h e lexicon used by spell contains approxi-"
+Patterns --- [36 "e"], [48 "e"], 
+
+"it helps to find typing errors. T h e lexicon used by spell contains approxi-"
+"mately 70,000 entries stored within less t h a n 60 kilobytes of random-access"
+Patterns --- [25 "r"], 
+
+"mately 70,000 entries stored within less t h a n 60 kilobytes of random-access"
+"memory. Quick access to lexicons is a necessary condition for producing good"
+Patterns --- [0 "m"], [5 "y"], [33 "i"], [55 "o"], 
+
+"memory. Quick access to lexicons is a necessary condition for producing good"
+"parsers. T h e d a t a structure useful for such access is called an index. In our"
+Patterns --- [34 "s"], 
+
+"parsers. T h e d a t a structure useful for such access is called an index. In our"
+"book indexes correspond to d a t a structures representing all factors of a given"
+Patterns --- [24 "t"], [42 "r"], [44 "s"], [52 "e"], [61 "l"], 
+
+"book indexes correspond to d a t a structures representing all factors of a given"
+"(presumably long) text. We consider problems related to the construction of"
+Patterns --- [37 "r"], [50 "e"], 
+
+"(presumably long) text. We consider problems related to the construction of"
+"such structures: suffix t r e e s , d i r e c t e d a c y c l i c w o r d g r a p h s , f a c t o r a u -"
+Patterns --- 
+
+"such structures: suffix t r e e s , d i r e c t e d a c y c l i c w o r d g r a p h s , f a c t o r a u -"
+"t o m a t a , suffix arrays. T h e PAT"
+Patterns --- [14 "s"], 
+
+"t o m a t a , suffix arrays. T h e PAT"
+"tool developed at the N O E D Center"
+Patterns --- [0 "t"], [2 "o"], 
+
+"tool developed at the N O E D Center"
+"(Waterloo, Canada) is an implementation of one of these structures tailored"
+Patterns --- [31 "e"], [32 "n"], [33 "t"], 
+
+"(Waterloo, Canada) is an implementation of one of these structures tailored"
+"to work on large texts. There are several applications t h a t effectively require"
+Patterns --- [5 "r"], [8 "o"], [12 "a"], [53 "s"], [61 "t"], [69 "i"], 
+
+"to work on large texts. There are several applications t h a t effectively require"
+"some understanding of phrases in n a t u r a l languages, such as d a t a retrieval"
+Patterns --- [1 "o"], [12 "a"], [45 "l"], [48 "a"], 
+
+"some understanding of phrases in n a t u r a l languages, such as d a t a retrieval"
+"systems, interactive software, a n d character recognition."
+Patterns --- [0 "s"], [11 "t"], [33 "n"], 
+
+"systems, interactive software, a n d character recognition."
+"An image scanner is a kind of photocopier. It is used to give a digitized"
+Patterns --- [17 "i"], [40 "r"], [54 "t"], 
+
+"An image scanner is a kind of photocopier. It is used to give a digitized"
+"version of a n image. W h e n the image is a page of text, the n a t u r a l o u t p u t of the"
+Patterns --- [11 "a"], [13 "n"], [31 "h"], 
+
+"version of a n image. W h e n the image is a page of text, the n a t u r a l o u t p u t of the"
+"scanner must be in a digital form available to a text editor. T h e transformation"
+Patterns --- [36 "a"], [54 "e"], 
+
+"scanner must be in a digital form available to a text editor. T h e transformation"
+"of a digitized image of a text into a usual computer representation of the text"
+Patterns --- [36 "a"], [45 "o"], [49 "t"], [50 "e"], [54 "e"], [78 "t"], 
+
+"of a digitized image of a text into a usual computer representation of the text"
+"is realized by a n Optical Character Recognition ( O C R ) . Scanning a text with"
+Patterns --- [24 "a"], [33 "t"], [73 "e"], [75 "t"], 
+
+"is realized by a n Optical Character Recognition ( O C R ) . Scanning a text with"
+"an O C R can be 50 times faster t h a n retyping the text on a keyboard. T h u s ,"
+Patterns --- [30 "r"], [45 "i"], 
+
+"an O C R can be 50 times faster t h a n retyping the text on a keyboard. T h u s ,"
+"O C R softwares are likely to become more common. B u t they still suffer from"
+Patterns --- [56 "t"], 
+
+"O C R softwares are likely to become more common. B u t they still suffer from"
+"a high degree of imprecision. T h e average rate of error in the recognition of"
+Patterns --- [39 "r"], 
+
+"a high degree of imprecision. T h e average rate of error in the recognition of"
+"characters is approximately one percent. Even if this may h a p p e n to be rather"
+Patterns --- [66 "e"], 
+
+"characters is approximately one percent. Even if this may h a p p e n to be rather"
+"small, this means t h a t scanning a book produces approximately one error per"
+Patterns --- [2 "a"], [14 "a"], [22 "a"], [29 "n"], 
+
+"small, this means t h a t scanning a book produces approximately one error per"
+"line. This is compared with the usually very high quality of texts checked"
+Patterns --- [35 "a"], [69 "e"], 
+
+"line. This is compared with the usually very high quality of texts checked"
+"by specialists. Technical improvements on the hardware can help eliminate"
+Patterns --- [72 "e"], 
+
+"by specialists. Technical improvements on the hardware can help eliminate"
+"certain kinds of errors occurring on scanned texts in printed forms. But this"
+Patterns --- [17 "e"], [29 "r"], [35 "n"], [37 "s"], [40 "n"], [57 "n"], [71 "t"], 
+
+"certain kinds of errors occurring on scanned texts in printed forms. But this"
+"cannot alleviate the problem associated with recognizing texts in printed forms."
+Patterns --- [0 "c"], [46 "e"], [51 "i"], 
+
+"cannot alleviate the problem associated with recognizing texts in printed forms."
+"Reduction of the number of errors can thus only be achieved by considering the"
+Patterns --- [5 "t"], [15 "e"], [22 "r"], [35 "a"], 
+
+"Reduction of the number of errors can thus only be achieved by considering the"
+"context of the characters, which assumes some understanding of the structure"
+Patterns --- [41 "s"], [49 "e"], 
+
+"context of the characters, which assumes some understanding of the structure"
+"of the text. Image processing is related to the problem of two-dimensional"
+Patterns --- [3 "t"], [24 "s"], [38 "e"], [42 "o"], 
+
+"of the text. Image processing is related to the problem of two-dimensional"
+"pattern matching. Another related problem is the data structure for all"
+Patterns --- [3 "t"], [10 "t"], [23 "e"], [59 "t"], 
+
+"pattern matching. Another related problem is the data structure for all"
+"subimages, which is discussed in this book in the context of the dictionary"
+Patterns --- [12 "h"], [13 "i"], [27 "e"], 
+
+"subimages, which is discussed in this book in the context of the dictionary"
+"of basic factors."
+Patterns --- 
+
+"of basic factors."
+"The theoretical approach to the representation of lexicons is either by means"
+Patterns --- 
+
+"The theoretical approach to the representation of lexicons is either by means"
+"of trees or finite state automata. It appears that both approaches are equally"
+Patterns --- [6 "e"], [21 "a"], [74 "a"], 
+
+"of trees or finite state automata. It appears that both approaches are equally"
+"efficient. This shows the practical importance of the automata theoretic"
+Patterns --- [1 "f"], [6 "e"], [13 "i"], [22 "t"], [42 "a"], [61 "a"], 
+
+"efficient. This shows the practical importance of the automata theoretic"
+"approach to text problems. At LITP (Paris) and IGM (Marne-la-Vallee)"
+Patterns --- [59 "a"], [65 "e"], 
+
+"approach to text problems. At LITP (Paris) and IGM (Marne-la-Vallee)"
+"we have shown that the use of automata to represent lexicons is particularly"
+Patterns --- [10 "o"], [24 "s"], [37 "a"], 
+
+"we have shown that the use of automata to represent lexicons is particularly"
+"efficient. Experiments have been done on a 700,000 word lexicon of LADL"
+Patterns --- [6 "e"], 
+
+"efficient. Experiments have been done on a 700,000 word lexicon of LADL"
+"(Paris). The representation supports direct access to any word of the lexicon"
+Patterns --- [14 "e"], [52 "o"], 
+
+"(Paris). The representation supports direct access to any word of the lexicon"
+"and takes only 300 kilobytes of random-access memory."
+Patterns --- [41 "c"], [47 "e"], 
+
+----------------------------------end of exercise 2----------------------------------------------------
+----------------------------------exercise 3----------------------------------------------------------
+Searching for "th":
+
+Searching for "t h":
+"t h a n 700,000 words. T h e representation of lexicons of this size makes the"
+"t h a t if inflected forms are considered. In French, inflected forms produce more"
+Matches --- [0 "t h"]
+----------------------------------end of exercise 3----------------------------------------------------
